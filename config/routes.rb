@@ -1,4 +1,12 @@
 FirstApp::Application.routes.draw do
+  resources :shows
+
+  resources :venues
+
+  resources :genres
+
+  resources :bands
+
   resources :users
 
   # The priority is based upon order of creation:

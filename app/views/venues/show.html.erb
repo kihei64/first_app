@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @venue.name %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%= @venue.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @venue.address2 %>
+</p>
+
+<p>
+  <b>Address3:</b>
+  <%= @venue.address3 %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @venue.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @venue.lon %>
+</p>
+
+<p>
+  <b>Maplink:</b>
+  <%= @venue.maplink %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @venue.contact %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @venue.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>

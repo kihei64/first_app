@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2012-06-08 18:52:47
+  band: 1
+  venue: 1
+  over21: false
+  notes: MyText
+  contact: MyString
+  phone: MyString
+
+two:
+  date: 2012-06-08 18:52:47
+  band: 1
+  venue: 1
+  over21: false
+  notes: MyText
+  contact: MyString
+  phone: MyString

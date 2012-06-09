@@ -11,11 +11,54 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120608225407) do
+ActiveRecord::Schema.define(:version => 20120609015247) do
+
+  create_table "bands", :force => true do |t|
+    t.string   "name"
+    t.integer  "genre"
+    t.string   "website"
+    t.string   "email"
+    t.integer  "rating"
+    t.text     "notes"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "genres", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "shows", :force => true do |t|
+    t.datetime "date"
+    t.integer  "band"
+    t.integer  "venue"
+    t.boolean  "over21"
+    t.text     "notes"
+    t.string   "contact"
+    t.string   "phone"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "venues", :force => true do |t|
+    t.string   "name"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "address3"
+    t.float    "lat"
+    t.float    "lon"
+    t.string   "maplink"
+    t.string   "contact"
+    t.string   "phone"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
